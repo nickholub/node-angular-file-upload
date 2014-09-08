@@ -7,6 +7,9 @@ Features:
 - drop zone
 - select file
 - upload progress
+- immediate upload on file drop/file select
+
+![AngularJS File Upload](screenshot.png "AngularJS File Upload") 
  
 ## Links
  
