@@ -1,7 +1,12 @@
 {
   "name": "nodeAngularFileUpload",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.8.8",
+    "path": "^0.4.9",
+    "fs-extra": "^0.11.1",
+    "connect-busboy": "0.0.1"
+  },
   "devDependencies": {
     "gulp": "^3.6.0",
     "gulp-autoprefixer": "^0.0.6",
