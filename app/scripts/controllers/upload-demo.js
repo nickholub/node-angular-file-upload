@@ -6,6 +6,9 @@ angular.module('app')
       url: '/upload',
       success: function (fileItem) {
         console.log('uploaded ' + fileItem.file.name);
+      },
+      error: function (fileItem) {
+        console.log('failed ' + fileItem.file.name);
       }
     };
   });

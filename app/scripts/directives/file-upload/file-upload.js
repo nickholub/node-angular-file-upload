@@ -51,6 +51,10 @@ angular.module('ui.fileUpload', ['angularFileUpload'])
               msg: 'File ' + fileItem.file.name + ' upload failed',
               details: status + ' ' + response
             };
+
+            if (options.error) {
+              options.error(fileItem);
+            }
           }
         });
 
