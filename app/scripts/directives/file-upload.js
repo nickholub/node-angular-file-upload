@@ -40,8 +40,8 @@ angular.module('ui.fileUpload', ['angularFileUpload'])
               msg: 'File ' + fileItem.file.name + ' is successfully uploaded'
             };
 
-            if (options.onSuccess) {
-              options.onSuccess(fileItem);
+            if (options.success) {
+              options.success(fileItem);
             }
           },
           onErrorItem: function (fileItem, response, status) {
