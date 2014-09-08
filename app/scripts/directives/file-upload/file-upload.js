@@ -10,8 +10,6 @@ angular.module('ui.fileUpload', ['angularFileUpload'])
       link: function (scope, element, attrs) {
         var options = scope.$eval(attrs.fileUpload);
 
-        console.log(options);
-
         if (!options || !options.url) {
           throw 'Upload URL is not set';
         }
