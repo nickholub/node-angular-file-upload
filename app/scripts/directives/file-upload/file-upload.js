@@ -5,7 +5,7 @@ angular.module('ui.fileUpload', ['angularFileUpload'])
     return {
       restrict: 'A',
       replace: true,
-      templateUrl: 'scripts/directives/file-upload.html',
+      templateUrl: 'scripts/directives/file-upload/file-upload.html',
       scope: true,
       link: function (scope, element, attrs) {
         var options = scope.$eval(attrs.fileUpload);
