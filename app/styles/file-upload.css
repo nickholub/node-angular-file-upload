@@ -1,0 +1,40 @@
+.upload-zone {
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.upload-zone .alert-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.upload-zone .alert {
+    overflow: hidden;
+}
+
+.drop-zone, .upload-progress-zone {
+    height: 400px;
+    width: 400px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.drop-zone {
+    border: 2px black dashed;
+}
+
+.drop-zone-over {
+    border-color: blue;
+}
+
+.drop-zone .drop-zone-message {
+    font-size: 2em;
+}
+
+.drop-zone input[type="file"]  {
+    display: none;
+}
