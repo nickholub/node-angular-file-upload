@@ -12,6 +12,8 @@ Features:
 
 ## Demo
 
+Screenshot
+
 ![AngularJS File Upload](screenshot.png "AngularJS File Upload")
  
 ## Links
