@@ -1,7 +1,8 @@
 .upload-zone {
     height: 400px;
-    width: 400px;
     position: relative;
+    display: table;
+    width: 100%;
 }
 
 .upload-zone .alert-container {
@@ -17,7 +18,6 @@
 
 .drop-zone, .upload-progress-zone {
     height: 400px;
-    width: 400px;
     display: table-cell;
     vertical-align: middle;
     text-align: center;

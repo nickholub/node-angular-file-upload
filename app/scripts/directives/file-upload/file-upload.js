@@ -69,4 +69,48 @@ angular.module('ui.fileUpload', ['angularFileUpload'])
         };
       }
     };
+  })
+  .factory('FileUploadModal', function ($modal) {
+    function FileUploadModal(fileUploadOptions) {
+      this.fileUploadOptions = fileUploadOptions;
+    }
+
+    angular.extend(FileUploadModal.prototype, {
+      open: function () {
+        var fileUploadOptions = this.fileUploadOptions;
+
+        $modal.open({
+          templateUrl: 'scripts/directives/file-upload/file-upload-modal.html',
+          controller: 'ModalInstanceCtrl',
+          size: 'lg',
+          resolve: {
+            fileUploadOptions: function () {
+              return fileUploadOptions;
+            }
+          }
+        });
+      }
+    });
+
+    return FileUploadModal;
+  })
+  .controller('ModalInstanceCtrl', function ($scope, $modalInstance, fileUploadOptions) {
+    $scope.fileUploadOptions = {};
+
+    angular.extend($scope.fileUploadOptions, fileUploadOptions);
+
+    //override success callback to close the modal
+    angular.extend($scope.fileUploadOptions, {
+      success: function (fileItem) {
+        $modalInstance.close(fileItem.file.name);
+
+        if (fileUploadOptions.success) {
+          fileUploadOptions.success(fileItem);
+        }
+      }
+    });
+
+    $scope.cancel = function () {
+      $modalInstance.dismiss('cancel');
+    };
   });
