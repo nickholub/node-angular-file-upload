@@ -35,7 +35,7 @@ angular.module('ui.fileUpload', ['angularFileUpload'])
 
             scope.alert = {
               type: 'success',
-              msg: 'File ' + fileItem.file.name + ' is successfully uploaded'
+              msg: 'File "' + fileItem.file.name + '" is successfully uploaded'
             };
 
             if (options.success) {
@@ -48,7 +48,7 @@ angular.module('ui.fileUpload', ['angularFileUpload'])
 
             scope.alert = {
               type: 'danger',
-              msg: 'File ' + fileItem.file.name + ' upload failed',
+              msg: 'File "' + fileItem.file.name + '" upload failed',
               details: status + ' ' + response
             };
 

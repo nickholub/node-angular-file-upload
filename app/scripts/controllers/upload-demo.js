@@ -9,13 +9,13 @@ angular.module('app')
       success: function (fileItem) {
         $scope.alerts.push({
           type: 'success',
-          msg: 'uploaded ' + fileItem.file.name
+          msg: '"' + fileItem.file.name + '" uploaded'
         });
       },
       error: function (fileItem) {
         $scope.alerts.push({
           type: 'danger',
-          msg: 'failed ' + fileItem.file.name
+          msg: '"' + fileItem.file.name + '" failed'
         });
       }
     };
