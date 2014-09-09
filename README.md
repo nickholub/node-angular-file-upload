@@ -10,7 +10,7 @@ Features:
 - upload modal service
 - immediate upload on file drop/file select
 
-![AngularJS File Upload](screenshot.png "AngularJS File Upload") 
+![AngularJS File Upload](screenshot.png "AngularJS File Upload")
  
 ## Links
  
